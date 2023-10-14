@@ -1,0 +1,27 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:summary="@string/username_and_password_information"
+        app:title="@string/login_information" >
+        <EditTextPreference
+            app:key="userEmail"
+            app:summary="@string/enter_your_email"
+            app:title="@string/email" />
+        <EditTextPreference
+            app:key="userPassword"
+            app:summary="@string/enter_your_password"
+            app:title="@string/prompt_password" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:summary="@string/apps_language"
+        app:title="@string/language_settings" >
+
+        <ListPreference
+            app:entries="@array/lng_array"
+            app:entryValues="@array/lng_for_config"
+            app:key="lang"
+            app:summary="@string/list_of_languages"
+            app:title="@string/choose_apps_language" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

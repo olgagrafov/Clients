@@ -1,0 +1,148 @@
+<resources>
+    <string name="server_client_id" translatable="false">796898472236-ap5ho2j588i37kdajbpscgaa3d9aj4pg.apps.googleusercontent.com</string>
+    <string name="server_client_secret" translatable="false">DiRAMvuw315R66gNIISIBfDT</string>
+    <string name="tbl_clients" translatable="false">/clients</string>
+    <string name="tbl_users" translatable="false">users/</string>
+    <string name="tbl_orders" translatable="false">/orders</string>
+    <string name="tbl_appointment" translatable="false">/appointment</string>
+    <string name="tbl_notes" translatable="false">/notes</string>
+    <string name="permission_denied_contacts" translatable="false">permission denied contacts</string>
+    <string name="file_provider_authority" translatable="false">com.olgag.mngclients.fileprovider</string>
+    <string name="dir_name" translatable="false">clientsDir</string>
+    <string name="sig_file_name" translatable="false">sig.png</string>
+    <string name="work_card_file_name" translatable="false">workcard.pdf</string>
+
+    <string-array name="lng_array" translatable="false">
+        <item>עִברִית</item>
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+
+    <string-array name="lng_for_config" translatable="false">
+        <item>he</item>
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
+
+    <string-array name="sms_sent">
+        <item>ALL Appointments</item>
+        <item>SMS sent</item>
+        <item>SMS not sent</item>
+    </string-array>
+
+    <string name="login_with_google">Login with Google</string>
+    <string name="google_failed">google exaptation:</string>
+    <string name="login_with_email">Login with Email</string>
+    <string name="authentication_failed">Authentication failed</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_account_failed">Create Account Failed</string>
+    <string name="sign_in">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="email_sent">Email sent for restore password</string>
+    <string name="wrong_email">this is a wrong email</string>
+    <string name="invalid_email">Not a valid email</string>
+    <string name="invalid__password">Password must be > 5 characters only letters or digits</string>
+    <string name="app_name">Clients</string>
+    <string name="serial_number">Serial Number</string>
+    <string name="model_number">Model Number</string>
+    <string name="product_name">Device Name</string>
+    <string name="description">Description</string>
+    <string name="clients">Clients</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="add_new_client">Add New Client</string>
+    <string name="save">save</string>
+    <string name="serial_number_empty">a serial number is empty</string>
+    <string name="model_number_empty">a model number is empty</string>
+    <string name="product_name_empty">a device name is empty</string>
+    <string name="client_name_empty">a client name is empty</string>
+    <string name="client_address_empty">a client address is empty</string>
+    <string name="client_phone_number_empty">a client phone number is empty or wrong</string>
+    <string name="document_added_error">Error writing document</string>
+    <string name="add_phone_number2">Add an additional phone number</string>
+    <string name="client_added">New  client successfully added</string>
+    <string name="add_order">Add order</string>
+    <string name="reference">Model</string>
+    <string name="cost">Cost</string>
+    <string name="search_client">Search by Phone or Name</string>
+    <string name="add_new_order">Add New Order</string>
+    <string name="change_date">Change Date</string>
+    <string name="order_created">Order created at: </string>
+    <string name="note">Note</string>
+    <string name="add_note">Add note</string>
+    <string name="update_current_order">Update Current Order</string>
+    <string name="update_current_client">Update Current Client</string>
+    <string name="client_updated">Current client successfully updated</string>
+    <string name="client_deleted">Current client successfully deleted</string>
+    <string name="document_deleted_error">Error deleting  document</string>
+    <string name="order_added">Current order successfully added</string>
+    <string name="order_updated">Current order successfully updated</string>
+    <string name="order_deleted">Current order successfully deleted</string>
+    <string name="undo">undo</string>
+    <string name="RememberMe">Remember me</string>
+    <string name="latest_order">latest order</string>
+    <string name="order_closed">Order closed at: </string>
+    <string name="close_order">Close order</string>
+    <string name="bid">Check price: </string>
+    <string name="no">no</string>
+    <string name="yes">yes</string>
+    <string name="opened_order">Opened orders</string>
+    <string name="requested_bid">Requested bids</string>
+    <string name="all_clients">All clients</string>
+    <string name="orders">Orders</string>
+    <string name="search_order">Search by Date</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="date_error">FROM date must be less than TO date</string>
+    <string name="all_orders">All orders</string>
+    <string name="search_order_by_name">Search order by name</string>
+    <string name="order">Order </string>
+    <string name="closed">closed</string>
+    <string name="is_open">is open</string>
+    <string name="and_request_bid"> and request bid</string>
+    <string name="order_owner">order owner is:</string>
+    <string name="exit">EXIT</string>
+    <string name="click_exit">\t\t Please click EXIT to exit</string>
+    <string name="clear">clear</string>
+    <string name="order_has_guarantee">Has a guarantee</string>
+    <string name="order_dosnt_has_guarantee">Has\'t a guarantee</string>
+    <string name="there_are_no_orders_yet">the client has no orders yet</string>
+    <string name="title">title</string>
+    <string name="set_title">\"click me\" create the TITLE</string>
+    <string name="set_note">\"click me\" create the NOTE</string>
+    <string name="footer_success_added">NOTE successfully created</string>
+    <string name="title_success_added">TITLE successfully created</string>
+    <string name="client_data">Client data:</string>
+    <string name="received_device">Client received the device</string>
+    <string name="customer_signature">Client signature:</string>
+    <string name="details_for">Details for </string>
+    <string name="start_date">Start date: </string>
+    <string name="client_requested_to_check">Client requested to check price</string>
+    <string name="end_date">End date: </string>
+    <string name="last_visit">last visit: </string>
+    <string name="wrong_value">wrong value</string>
+    <string name="ok">ok</string>
+    <string name="appointment">Appointments</string>
+    <string name="create_appointment">Create appointment</string>
+    <string name="busy">busy</string>
+    <string name="appointment_deleted">Current appointment successfully deleted</string>
+    <string name="SMS_template">SMS template</string>
+    <string name="The_appointment_was_scheduled_for">The appointment was scheduled for:</string>
+    <string name="cancel">cancel</string>
+    <string name="settings">Settings</string>
+    <string name="username_and_password_information">User email and password information</string>
+    <string name="login_information">Login information</string>
+    <string name="enter_your_email">enter your email</string>
+    <string name="enter_your_password">enter your password</string>
+    <string name="apps_language">App\'s language</string>
+    <string name="language_settings">Language Settings</string>
+    <string name="list_of_languages">List of languages</string>
+    <string name="choose_apps_language">Choose app\'s language</string>
+    <string name="remove_password_or_input_email">Remove password or input email</string>
+    <string name="enter_password_or_remove_email">Enter password or remove email</string>
+    <string name="you_must_add_additional_phone">You must add an additional phone number that start from +972</string>
+</resources>

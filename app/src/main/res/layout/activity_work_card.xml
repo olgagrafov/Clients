@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.olgag.mngclients.activities.WorkCard"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:id="@+id/main_layout">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/all_context">
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:paddingBottom="3dp"
+        android:textSize="20sp"/>
+    <LinearLayout
+        android:id="@+id/lbl_txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/inputs"
+            android:id="@+id/txt_laytitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:maxLength="100"
+                android:lines="3"  />
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/img_btn_save_title"
+            style="@style/imgBtnTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|end"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_galo4ka" />
+    </LinearLayout>
+           <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/txt_client_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitle" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/txt_client_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_client_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_client_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+            </LinearLayout>
+           <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary" />
+            <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:gravity="center"
+               android:layout_marginBottom="2dp">
+            <TextView
+                android:id="@+id/txt_ord_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/txtTitle"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+                <TextView
+                    android:id="@+id/txt_ord_model"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_serial_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_open_order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_guarantee"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle"/>
+                <TextView
+                    android:id="@+id/txt_ask_for_check_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle"/>
+                <TextView
+                    android:id="@+id/txt_order_cost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle"/>
+                <TextView
+                    android:id="@+id/txt_received_device"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle"/>
+                <TextView
+                    android:id="@+id/txt_ord_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle"
+                    />
+                <TextView
+                    android:id="@+id/txt_close_order_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/boldStyle" />
+                <TextView
+                    android:id="@+id/txt_signature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/txtLink"/>
+                <ImageView
+                    android:id="@+id/img_signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"/>
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="60dp"  >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txt_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            style="@style/boldStyle"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"/>
+        <LinearLayout
+            android:id="@+id/lbl_txt_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="150dp"
+            >
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_laynote"
+            style="@style/inputs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+         <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/input_txt_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="10dp"
+                android:maxLength="200"
+                android:lines="5"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <ImageButton
+            android:id="@+id/img_btn_save_note"
+            style="@style/imgBtnTab"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center|end"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_galo4ka" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom|end" >
+            <ImageButton
+                android:id="@+id/btn_share_with_whatsapp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/imgBtnCard"
+                app:srcCompat="@drawable/ic_whats_app"/>
+            <ImageButton
+                android:id="@+id/btn_save_work_card"
+                style="@style/imgBtnCard"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                app:srcCompat="@android:drawable/ic_menu_share" />
+        </LinearLayout>
+        <Spinner
+            android:id="@+id/spinner_setLng"
+            style="@style/imgBtnCard"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:textAlignment="center"
+            app:backgroundTint="#EFEEE5"
+            tools:ignore="RtlCompat" />
+
+        <ImageButton
+            android:id="@+id/btn_close_work_card"
+            style="@style/imgBtnCard"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="bottom|start"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

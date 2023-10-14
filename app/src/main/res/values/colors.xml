@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSurface">#FBFBFB</color>
+    <color name="colorPrimary">#3B5991</color>
+    <color name="colorPrimaryDark">#FBFBFB</color>
+    <color name="colorAccent">#3B5991</color>
+    <color name="app_color">#F8F9FA</color>
+    <color name="btn_background">#3B5991</color>
+    <color name="btn_txt_color">#DEE6EC</color>
+    <color name="hint_color">#6F272525</color>
+    <color name="tab_txt_color">#9A9B9C</color>
+    <color name="color_txt_button">#E3DFBD</color>
+    <color name="error_color">#C6352A</color>
+    <color name="start_color">#9FCEDA</color>
+</resources>

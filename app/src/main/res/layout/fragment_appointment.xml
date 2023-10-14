@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.AppointmentFragment"
+    android:background="@drawable/gradient_background">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+    <Spinner
+        android:id="@+id/spinner_is_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/background_rounded" />
+    <TextView
+        android:id="@+id/sms_template"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginEnd="5dp"
+        android:gravity="end"
+        style="@style/txtLink"
+        android:text="@string/SMS_template"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/boldStyle"
+            android:text="@string/from"
+            android:layout_gravity="center"
+            android:layout_margin="5dp" />
+        <TextView
+            android:id="@+id/app_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtLink"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/boldStyle"
+            android:text="@string/to"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"/>
+        <TextView
+            android:id="@+id/app_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/txtLink"
+            android:layout_gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"></LinearLayout>
+
+        <ImageButton
+            android:id="@+id/search_app_by_date"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center|end"
+            android:background="@drawable/searchview_rounded"
+            android:src="?android:attr/actionModeWebSearchDrawable"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycViewAppointments"/>
+</LinearLayout>
+</FrameLayout>

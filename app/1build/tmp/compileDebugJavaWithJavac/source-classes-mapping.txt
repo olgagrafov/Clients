@@ -1,0 +1,144 @@
+com/olgag/mngclients/activities/WorkCard.java
+ com.olgag.mngclients.activities.WorkCard
+ com.olgag.mngclients.activities.WorkCard$1
+com/olgag/mngclients/activities/StartApp.java
+ com.olgag.mngclients.activities.StartApp
+ com.olgag.mngclients.activities.StartApp$1
+ com.olgag.mngclients.activities.StartApp$2
+com/olgag/mngclients/controler/Alert.java
+ com.olgag.mngclients.controler.Alert
+com/olgag/mngclients/db/NotesDBHelper.java
+ com.olgag.mngclients.db.NotesDBHelper
+ com.olgag.mngclients.db.NotesDBHelper$1
+ com.olgag.mngclients.db.NotesDBHelper$10
+ com.olgag.mngclients.db.NotesDBHelper$11
+ com.olgag.mngclients.db.NotesDBHelper$12
+ com.olgag.mngclients.db.NotesDBHelper$2
+ com.olgag.mngclients.db.NotesDBHelper$3
+ com.olgag.mngclients.db.NotesDBHelper$4
+ com.olgag.mngclients.db.NotesDBHelper$5
+ com.olgag.mngclients.db.NotesDBHelper$6
+ com.olgag.mngclients.db.NotesDBHelper$7
+ com.olgag.mngclients.db.NotesDBHelper$8
+ com.olgag.mngclients.db.NotesDBHelper$9
+ com.olgag.mngclients.db.NotesDBHelper$OnGetDateSuccess
+ com.olgag.mngclients.db.NotesDBHelper$OnGetSMSTemplateSuccess
+com/olgag/mngclients/fragments/OrderFragment.java
+ com.olgag.mngclients.fragments.OrderFragment
+com/olgag/mngclients/activities/Login.java
+ com.olgag.mngclients.activities.Login
+ com.olgag.mngclients.activities.Login$1
+ com.olgag.mngclients.activities.Login$2
+ com.olgag.mngclients.activities.Login$3
+ com.olgag.mngclients.activities.Login$4
+ com.olgag.mngclients.activities.Login$5
+com/olgag/mngclients/model/Client.java
+ com.olgag.mngclients.model.Client
+ com.olgag.mngclients.model.Client$1
+ com.olgag.mngclients.model.Client$2
+com/olgag/mngclients/controler/OrderAdapter.java
+ com.olgag.mngclients.controler.OrderAdapter
+ com.olgag.mngclients.controler.OrderAdapter$OnOrderClickListener
+ com.olgag.mngclients.controler.OrderAdapter$OrderHolder
+ com.olgag.mngclients.controler.OrderAdapter$OrderHolder$1
+com/olgag/mngclients/methods/MethodsForApp.java
+ com.olgag.mngclients.methods.MethodsForApp
+ com.olgag.mngclients.methods.MethodsForApp$1
+com/olgag/mngclients/db/AppointmentDBHelper.java
+ com.olgag.mngclients.db.AppointmentDBHelper
+ com.olgag.mngclients.db.AppointmentDBHelper$1
+ com.olgag.mngclients.db.AppointmentDBHelper$2
+ com.olgag.mngclients.db.AppointmentDBHelper$3
+ com.olgag.mngclients.db.AppointmentDBHelper$4
+ com.olgag.mngclients.db.AppointmentDBHelper$5
+ com.olgag.mngclients.db.AppointmentDBHelper$6
+ com.olgag.mngclients.db.AppointmentDBHelper$7
+ com.olgag.mngclients.db.AppointmentDBHelper$8
+ com.olgag.mngclients.db.AppointmentDBHelper$9
+ com.olgag.mngclients.db.AppointmentDBHelper$OnSetArrAppointmentStart
+com/olgag/mngclients/activities/AddUpdateOrder.java
+ com.olgag.mngclients.activities.AddUpdateOrder
+com/olgag/mngclients/activities/AddUpdateClient.java
+ com.olgag.mngclients.activities.AddUpdateClient
+com/olgag/mngclients/activities/MainActivity.java
+ com.olgag.mngclients.activities.MainActivity
+ com.olgag.mngclients.activities.MainActivity$1
+com/olgag/mngclients/db/OrderDBHelper.java
+ com.olgag.mngclients.db.OrderDBHelper
+ com.olgag.mngclients.db.OrderDBHelper$1
+ com.olgag.mngclients.db.OrderDBHelper$10
+ com.olgag.mngclients.db.OrderDBHelper$11
+ com.olgag.mngclients.db.OrderDBHelper$12
+ com.olgag.mngclients.db.OrderDBHelper$13
+ com.olgag.mngclients.db.OrderDBHelper$14
+ com.olgag.mngclients.db.OrderDBHelper$15
+ com.olgag.mngclients.db.OrderDBHelper$2
+ com.olgag.mngclients.db.OrderDBHelper$3
+ com.olgag.mngclients.db.OrderDBHelper$4
+ com.olgag.mngclients.db.OrderDBHelper$5
+ com.olgag.mngclients.db.OrderDBHelper$6
+ com.olgag.mngclients.db.OrderDBHelper$7
+ com.olgag.mngclients.db.OrderDBHelper$8
+ com.olgag.mngclients.db.OrderDBHelper$9
+ com.olgag.mngclients.db.OrderDBHelper$OnGetAllClientsOrderSuccess
+com/olgag/mngclients/BuildConfig.java
+ com.olgag.mngclients.BuildConfig
+com/olgag/mngclients/db/ClientDBHelper.java
+ com.olgag.mngclients.db.ClientDBHelper
+ com.olgag.mngclients.db.ClientDBHelper$1
+ com.olgag.mngclients.db.ClientDBHelper$10
+ com.olgag.mngclients.db.ClientDBHelper$11
+ com.olgag.mngclients.db.ClientDBHelper$12
+ com.olgag.mngclients.db.ClientDBHelper$13
+ com.olgag.mngclients.db.ClientDBHelper$14
+ com.olgag.mngclients.db.ClientDBHelper$15
+ com.olgag.mngclients.db.ClientDBHelper$16
+ com.olgag.mngclients.db.ClientDBHelper$2
+ com.olgag.mngclients.db.ClientDBHelper$3
+ com.olgag.mngclients.db.ClientDBHelper$4
+ com.olgag.mngclients.db.ClientDBHelper$5
+ com.olgag.mngclients.db.ClientDBHelper$6
+ com.olgag.mngclients.db.ClientDBHelper$7
+ com.olgag.mngclients.db.ClientDBHelper$8
+ com.olgag.mngclients.db.ClientDBHelper$9
+ com.olgag.mngclients.db.ClientDBHelper$OnGetClientByIdSuccess
+com/olgag/mngclients/controler/ClientAdapter.java
+ com.olgag.mngclients.controler.ClientAdapter
+ com.olgag.mngclients.controler.ClientAdapter$ClientHolder
+ com.olgag.mngclients.controler.ClientAdapter$ClientHolder$1
+com/olgag/mngclients/activities/SignatureActivity.java
+ com.olgag.mngclients.activities.SignatureActivity
+ com.olgag.mngclients.activities.SignatureActivity$1
+com/olgag/mngclients/controler/MyPagerAdapter.java
+ com.olgag.mngclients.controler.MyPagerAdapter
+com/olgag/mngclients/controler/AppointmentAdapter.java
+ com.olgag.mngclients.controler.AppointmentAdapter
+ com.olgag.mngclients.controler.AppointmentAdapter$AppointmentHolder
+ com.olgag.mngclients.controler.AppointmentAdapter$AppointmentHolder$1
+ com.olgag.mngclients.controler.AppointmentAdapter$AppointmentHolder$2
+com/olgag/mngclients/activities/SettingsActivity.java
+ com.olgag.mngclients.activities.SettingsActivity
+ com.olgag.mngclients.activities.SettingsActivity$1
+ com.olgag.mngclients.activities.SettingsActivity$SettingsFragment
+com/olgag/mngclients/fragments/DatePickerFragment.java
+ com.olgag.mngclients.fragments.DatePickerFragment
+ com.olgag.mngclients.fragments.DatePickerFragment$OnDateSetClickListener
+com/olgag/mngclients/model/Appointment.java
+ com.olgag.mngclients.model.Appointment
+ com.olgag.mngclients.model.Appointment$1
+com/olgag/mngclients/fragments/SetAppointmentDialogFragment.java
+ com.olgag.mngclients.fragments.SetAppointmentDialogFragment
+ com.olgag.mngclients.fragments.SetAppointmentDialogFragment$OnAppointmentSetClickListener
+com/olgag/mngclients/model/Order.java
+ com.olgag.mngclients.model.Order
+ com.olgag.mngclients.model.Order$1
+ com.olgag.mngclients.model.Order$2
+ com.olgag.mngclients.model.Order$3
+com/olgag/mngclients/fragments/AppointmentFragment.java
+ com.olgag.mngclients.fragments.AppointmentFragment
+ com.olgag.mngclients.fragments.AppointmentFragment$1
+ com.olgag.mngclients.fragments.AppointmentFragment$2
+com/olgag/mngclients/methods/DecimalDigitsInputFilter.java
+ com.olgag.mngclients.methods.DecimalDigitsInputFilter
+com/olgag/mngclients/fragments/ClientFragment.java
+ com.olgag.mngclients.fragments.ClientFragment
