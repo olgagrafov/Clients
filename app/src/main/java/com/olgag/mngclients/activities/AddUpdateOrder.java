@@ -20,6 +20,7 @@ import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
 import com.olgag.mngclients.R;
 import com.olgag.mngclients.controler.Alert;
 import com.olgag.mngclients.db.AppointmentDBHelper;
@@ -65,7 +66,6 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_update_order);
-
         init();
     }
 
@@ -313,7 +313,7 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
 
 
     private void init() {
-
+        MethodsForApp.checkLocal(this);
         Intent intent = getIntent();
         userId = intent.getStringExtra("user");
         currentClient = intent.getParcelableExtra("client");
@@ -327,18 +327,23 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
 
         linkCreateAppointment = findViewById(R.id.txt_view_create_appointment);
         linkCreateAppointment.setOnClickListener(this);
+        linkCreateAppointment.setText(R.string.create_appointment);
         imgClearAppointment = findViewById(R.id.img_remove_appointment);
         imgClearAppointment.setOnClickListener(this);
 
         radioYes = findViewById(R.id.radio_btn_yes);
         radioYes.setOnClickListener(this);
+        radioYes.setText(R.string.yes);
         radioNo = findViewById(R.id.radio_btn_no);
+        radioNo.setText(R.string.no);
         radioNo.setOnClickListener(this);
 
         radioReceivedYes = findViewById(R.id.radio_received_yes);
         radioReceivedYes.setOnClickListener(this);
+        radioReceivedYes.setText(R.string.yes);
         radioReceivedNo = findViewById(R.id.radio_received_no);
         radioReceivedNo.setOnClickListener(this);
+        radioReceivedNo.setText(R.string.no);
 
          btnGoBack = findViewById(R.id.img_btn_go_back_to_client);
          btnGoBack.setOnClickListener(this);
@@ -346,6 +351,7 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
          imgSaveOrder= findViewById(R.id.img_btn_save_order);
          imgSaveOrder.setOnClickListener(this);
          btnSaveOrder = findViewById(R.id.btn_save_order);
+         btnSaveOrder.setText(getString(R.string.save));
          btnSaveOrder.setOnClickListener(this);
 
          inputPrdSerialNumber = findViewById(R.id.inputSerialNumber);
@@ -359,6 +365,7 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
          linkViewDateOrd.setOnClickListener(this);
          linkCloseOrder = findViewById(R.id.link_close_order);
          linkCloseOrder.setOnClickListener(this);
+         linkCloseOrder.setText(R.string.close_order);
          linkDateClosed = findViewById(R.id.txt_date__closed);
          linkDateClosed.setOnClickListener(this);
          imgOpenOrder = findViewById(R.id.img_open_order);
@@ -366,9 +373,20 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
 
          checkIsOrderHasGuarantee = findViewById(R.id.check_is_ord_exist);
          checkIsOrderHasGuarantee.setOnCheckedChangeListener(this);
+         checkIsOrderHasGuarantee.setText(getString(R.string.order_dosnt_has_guarantee));
 
          titleForOrderActivit = findViewById(R.id.txt_title_order_activity);
          inputProductName = findViewById(R.id.input_product_name);
+
+        ((TextInputLayout)findViewById(R.id.lblProductName)).setHint(getString(R.string.product_name));
+        ((TextInputLayout)findViewById(R.id.lblSerialNumber)).setHint(getString(R.string.serial_number));
+        ((TextInputLayout)findViewById(R.id.lblOrdRreference)).setHint(getString(R.string.reference));
+        ((TextInputLayout)findViewById(R.id.lblOrdCcost)).setHint(getString(R.string.cost));
+        ((TextInputLayout)findViewById(R.id.lblOrdDescription)).setHint(getString(R.string.description));
+        ((TextView)findViewById(R.id.txtBid)).setText(getString(R.string.bid));
+        ((TextView)findViewById(R.id.txtOrderCcreated)).setText(getString(R.string.order_created));
+        ((TextView)findViewById(R.id.txtReceivedDevice)).setText(getString(R.string.received_device));
+        ((TextView)findViewById(R.id.txt_order__closed)).setText(getString(R.string.order_closed));
 
 
             if (curentOrder != null) {
@@ -391,6 +409,7 @@ public class AddUpdateOrder extends AppCompatActivity implements View.OnClickLis
                 showOrderClose(curentOrder.isClosed());
             }
             else {
+                titleForOrderActivit.setText(getString(R.string.add_new_order));
                 linkViewDateOrd.setText(MethodsForApp.formatDateToString(0));
                 Calendar calendar = Calendar.getInstance();
                 calendar.add(Calendar.HOUR,-6);

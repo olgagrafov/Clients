@@ -1,6 +1,6 @@
 <resources>
-    <string name="server_client_id" translatable="false">796898472236-ap5ho2j588i37kdajbpscgaa3d9aj4pg.apps.googleusercontent.com</string>
-    <string name="server_client_secret" translatable="false">DiRAMvuw315R66gNIISIBfDT</string>
+    <string name="server_client_id" translatable="false"></string>
+    <string name="server_client_secret" translatable="false"></string>
     <string name="tbl_clients" translatable="false">/clients</string>
     <string name="tbl_users" translatable="false">users/</string>
     <string name="tbl_orders" translatable="false">/orders</string>

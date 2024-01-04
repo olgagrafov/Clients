@@ -3,9 +3,11 @@ package com.olgag.mngclients.methods;
 import android.animation.ValueAnimator;
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
+import android.preference.PreferenceManager;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
@@ -163,6 +165,14 @@ public interface MethodsForApp {
         snackbarText.setSpan(new RelativeSizeSpan(1.3f), boldStart, snackbarText.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);//resize size
         return snackbarText;
     }
+    static void checkLocal(Context con){
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(con);
+        String lang = preferences.getString("lang", "he");
+        Configuration config = con.getResources().getConfiguration();
+        if(! config.locale.getLanguage().equals(lang)) {
+            setUIperLang(lang, con.getResources());
+        }
+     }
 
     static void setUIperLang(String lang, Resources resources){
         DisplayMetrics dm = resources.getDisplayMetrics();

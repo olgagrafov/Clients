@@ -67,7 +67,6 @@ public class Login extends AppCompatActivity implements View.OnClickListener,
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-      //  String lang  = preferences.getString("lang", "he");
         spinner = findViewById(R.id.spinner_setLng);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.lng_array, android.R.layout.simple_spinner_item);
@@ -172,7 +171,8 @@ public class Login extends AppCompatActivity implements View.OnClickListener,
     private void updateUI( FirebaseUser currentUser) {
         if(currentUser!=null){
              Intent intent = new Intent(this, MainActivity.class);
-              intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
              intent.putExtra("user", currentUser.getUid());
              startActivity(intent);
              finish();
@@ -320,17 +320,15 @@ public class Login extends AppCompatActivity implements View.OnClickListener,
         switch (position){
             case 0:
                 lng = "he";
-                MethodsForApp.setUIperLang("he", getResources());
                 break;
             case 1:
                 lng = "en";
-                MethodsForApp.setUIperLang("en", getResources());
                 break;
             case 2:
                 lng = "ru";
-                MethodsForApp.setUIperLang("ru", getResources());
                 break;
         }
+        MethodsForApp.setUIperLang(lng, getResources());
        changeUIbylanguage();
     }
 

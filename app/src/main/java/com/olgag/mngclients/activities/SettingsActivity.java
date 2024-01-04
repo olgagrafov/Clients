@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.view.Gravity;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ import androidx.preference.PreferenceFragmentCompat;
 
 import com.olgag.mngclients.R;
 import com.olgag.mngclients.controler.Alert;
+import com.olgag.mngclients.methods.MethodsForApp;
 
 public class SettingsActivity extends AppCompatActivity {
     private  SharedPreferences preferences;
@@ -25,6 +27,8 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.settings_activity);
+        MethodsForApp.checkLocal(this);
+        ((TextView)findViewById(R.id.lblSettings)).setText(getString(R.string.settings));
 
         if (savedInstanceState == null) {
             getSupportFragmentManager()

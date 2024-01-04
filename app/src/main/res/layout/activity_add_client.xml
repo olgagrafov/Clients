@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:text="@string/add_new_client" />
+            />
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
@@ -67,7 +67,6 @@
                 android:orientation="vertical" >
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lblClientName"
-                    android:hint="@string/name"
                     style="@style/inputs"             >
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputClientName"
@@ -79,7 +78,6 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lblClientAddress"
-                    android:hint="@string/address"
                     app:startIconTint="@drawable/common_google_signin_btn_text_light"
                     style="@style/inputs">
                     <com.google.android.material.textfield.TextInputEditText
@@ -92,7 +90,6 @@
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lblClientPhoneNumber1"
-                    android:hint="@string/phone_number"
                     style="@style/inputs">
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/inputClientPhoneNumber1"
@@ -106,13 +103,11 @@
                     android:id="@+id/link_add_client_note"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/add_note"
                     android:layout_marginTop="5dp"
                     style="@style/txtLink"/>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/lblClientDescription"
-                        android:hint="@string/note"
                         style="@style/inputs"
                         android:visibility="gone">
                         <com.google.android.material.textfield.TextInputEditText
@@ -130,13 +125,11 @@
                     android:id="@+id/link_add_phone_number2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/add_phone_number2"
                     android:layout_marginTop="5dp"
                     style="@style/txtLink"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/lblClientPhoneNumber2"
-                    android:hint="@string/phone_number"
                     style="@style/inputs"
                     android:visibility="gone">
                     <com.google.android.material.textfield.TextInputEditText
@@ -152,7 +145,6 @@
             android:id="@+id/link_add_order"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/add_order"
             android:layout_marginTop="5dp"
             style="@style/txtLink"/>
         <androidx.recyclerview.widget.RecyclerView
@@ -165,7 +157,6 @@
         android:id="@+id/btn_save_client"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
         style="@style/btn_fab"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -27,13 +27,6 @@ public class StartApp extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
-//        Intent intent1;
-//        intent1 = new Intent(StartApp.this, MainActivity.class);
-//        intent1.putExtra("user", "W1crhdbSYkaVZwxUpHEYjvZ7VHW2"); //mAuth.getCurrentUser().getUid());
-//        startActivity(intent1);
-//        finish();
-
-
         startAnimator();
 
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -59,6 +52,7 @@ public class StartApp extends AppCompatActivity {
                                 Intent intent;
                                 intent = new Intent(StartApp.this, MainActivity.class);
                                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                                 intent.putExtra("user", mAuth.getCurrentUser().getUid());
                                 startActivity(intent);
                                 finish();

@@ -49,7 +49,7 @@ public class AddUpdateClient extends AppCompatActivity implements View.OnClickLi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_client);
-
+        MethodsForApp.checkLocal(this);
         findAllViews();
     }
 
@@ -198,6 +198,9 @@ public class AddUpdateClient extends AppCompatActivity implements View.OnClickLi
         if(curentClient!=null) {
             lblAddProduct.setText(getString(R.string.update_current_client));
         }
+        else{
+            lblAddProduct.setText(getString(R.string.add_new_client));
+        }
 
         orderAdapter = new OrderAdapter(this, false, userId);
 
@@ -222,6 +225,7 @@ public class AddUpdateClient extends AppCompatActivity implements View.OnClickLi
         imgSaveClient = findViewById(R.id.imgBtnSaveClient);
         imgSaveClient.setOnClickListener(this);
         btnSaveClient = findViewById(R.id.btn_save_client);
+        btnSaveClient.setText(getString(R.string.save));
         btnSaveClient.setOnClickListener(this);
 
         btnGoBack = findViewById(R.id.imgBtnGoBack);
@@ -229,12 +233,15 @@ public class AddUpdateClient extends AppCompatActivity implements View.OnClickLi
 
         lblAddProduct = findViewById(R.id.lbl_add_client);
         linkAddOrder = findViewById(R.id.link_add_order);
+        linkAddOrder.setText(getString(R.string.add_order));
         linkAddOrder.setOnClickListener(this);
         linkAddPhoneNumber2 =findViewById(R.id.link_add_phone_number2);
+        linkAddPhoneNumber2.setText(R.string.add_phone_number2);
         linkAddPhoneNumber2.setOnClickListener(this);
         lblClientPhoneNumber2 = findViewById(R.id.lblClientPhoneNumber2);
         lblClientDescription = findViewById(R.id.lblClientDescription);
         linkAddClientNote = findViewById(R.id.link_add_client_note);
+        linkAddClientNote.setText(getString(R.string.add_note));
         linkAddClientNote.setOnClickListener(this);
         editClientName = findViewById(R.id.inputClientName);
         editClientAddress = findViewById(R.id.inputClientAddress);
@@ -245,6 +252,11 @@ public class AddUpdateClient extends AppCompatActivity implements View.OnClickLi
         recOrderList = findViewById(R.id.recycViewOrders);
         recOrderList.setLayoutManager(new GridLayoutManager(this, 1));
 
+        ((TextInputLayout)findViewById(R.id.lblClientName)).setHint(getString(R.string.name));
+        ((TextInputLayout)findViewById(R.id.lblClientAddress)).setHint(getString(R.string.address));
+        ((TextInputLayout)findViewById(R.id.lblClientPhoneNumber1)).setHint(getString(R.string.phone_number));
+        ((TextInputLayout)findViewById(R.id.lblClientDescription)).setHint(getString(R.string.note));
+        ((TextInputLayout)findViewById(R.id.lblClientPhoneNumber2)).setHint(getString(R.string.phone_number));
     }
 
     @Override

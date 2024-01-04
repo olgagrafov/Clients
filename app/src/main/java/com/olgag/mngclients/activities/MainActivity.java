@@ -6,8 +6,11 @@ import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
+import android.widget.TextView;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentPagerAdapter;
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private boolean doubleBackToExitPressedOnce = false;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -86,8 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     @Override
     public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         switch (requestCode) {
             case REQUEST_PERMISSIONS:
                 boolean isPerpermissionForAllGranted = false;
@@ -101,12 +107,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                                     Manifest.permission.READ_CALL_LOG)) {
                             } else {
-                                String message =  "You have previously declined this permission.\n" +
+                                String message = "You have previously declined this permission.\n" +
                                         "You must approve this permission.";
-                                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content),message , Snackbar.LENGTH_LONG).setAction("Settings", new View.OnClickListener() {
+                                Snackbar snackbar = Snackbar.make(findViewById(android.R.id.content), message, Snackbar.LENGTH_LONG).setAction("Settings", new View.OnClickListener() {
                                     @Override
                                     public void onClick(View view) {
-                                        startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + BuildConfig.APPLICATION_ID)));
+                                        startActivity(new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS, Uri.parse("package:" + BuildConfig.APPLICATION_ID)));
                                     }
                                 });
                                 snackbar.show();
@@ -129,8 +135,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.N)
     private void init() {
-
+        MethodsForApp.checkLocal(this);
         vpPager = findViewById(R.id.vpPager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager(), this, userId);
 
@@ -145,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSettings = findViewById(R.id.btn_settings);
         btnSettings.setOnClickListener(this);
+        ((TextView)findViewById(R.id.appName)).setText(getString(R.string.app_name));
     }
 
     @Override

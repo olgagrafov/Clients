@@ -31,7 +31,6 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:text="@string/add_new_order"
             android:id="@+id/txt_title_order_activity"/>
         <View
             android:layout_width="0dp"
@@ -66,7 +65,6 @@
             android:layout_marginTop="10dp">
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/lblProductName"
-                android:hint="@string/product_name"
                 style="@style/inputs">
 
                 <com.google.android.material.textfield.TextInputEditText
@@ -79,7 +77,6 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/lblSerialNumber"
-            android:hint="@string/serial_number"
             style="@style/inputs">
 
             <com.google.android.material.textfield.TextInputEditText
@@ -91,7 +88,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="@string/reference"
+            android:id="@+id/lblOrdRreference"
             style="@style/inputs">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_ord_reference"
@@ -102,7 +99,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="@string/cost"
+            android:id="@+id/lblOrdCcost"
             style="@style/inputs">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_ord_cost"
@@ -113,7 +110,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:hint="@string/description"
+            android:id="@+id/lblOrdDescription"
             style="@style/inputs">
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/input_ord_description"
@@ -139,20 +136,19 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:id="@+id/txtBid"
                         style="@style/boldStyle"
-                        android:text="@string/bid"/>
+                       />
                     <RadioButton
                         android:id="@+id/radio_btn_no"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:checked="true"
-                        android:paddingEnd="15dp"
-                        android:text="@string/no" />
+                        android:paddingEnd="15dp" />
                     <RadioButton
                         android:id="@+id/radio_btn_yes"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/yes" />
+                        android:layout_height="wrap_content" />
                 </RadioGroup>
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -165,8 +161,7 @@
                         style="@style/txtLink"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="@string/create_appointment" />
+                        android:layout_weight="1" />
                     <ImageButton
                         android:id="@+id/img_remove_appointment"
                         android:layout_width="wrap_content"
@@ -178,9 +173,7 @@
                 <CheckBox
                     android:id="@+id/check_is_ord_exist"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="@string/order_dosnt_has_guarantee"
-                    />
+                    android:layout_height="wrap_content" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -190,8 +183,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/boldStyle"
-                    android:text="@string/order_created"/>
+                    android:id="@+id/txtOrderCcreated"
+                    style="@style/boldStyle" />
                 <TextView
                     android:id="@+id/txt_view_date_ord"
                     android:layout_width="wrap_content"
@@ -212,20 +205,18 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            style="@style/boldStyle"
-                            android:text="@string/received_device"/>
+                            android:id="@+id/txtReceivedDevice"
+                            style="@style/boldStyle" />
                         <RadioButton
                             android:id="@+id/radio_received_no"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:checked="true"
-                            android:paddingEnd="15dp"
-                            android:text="@string/no" />
+                            android:paddingEnd="15dp" />
                         <RadioButton
                             android:id="@+id/radio_received_yes"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/yes" />
+                            android:layout_height="wrap_content" />
                     </RadioGroup>
                 </LinearLayout>
                 <LinearLayout
@@ -241,14 +232,12 @@
                        android:layout_height="wrap_content"
                        android:layout_weight="1"
                        style="@style/txtLink"
-                       android:layout_gravity="start"
-                       android:text="@string/close_order"/>
+                       android:layout_gravity="start" />
                     <TextView
                         android:id="@+id/txt_order__closed"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/boldStyle"
-                        android:text="@string/order_closed"
                         android:visibility="invisible"/>
                     <TextView
                         android:id="@+id/txt_date__closed"
@@ -273,7 +262,6 @@
         android:id="@+id/btn_save_order"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/save"
         style="@style/btn_fab"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
