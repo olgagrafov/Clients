@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        MethodsForApp.checkLocal(this);
         Intent intent = getIntent();
         userId = intent.getStringExtra("user");
         currentItem = intent.getIntExtra("pagerItem", 0);
@@ -135,9 +135,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
+
     private void init() {
-        MethodsForApp.checkLocal(this);
         vpPager = findViewById(R.id.vpPager);
         adapterViewPager = new MyPagerAdapter(getSupportFragmentManager(), this, userId);
 

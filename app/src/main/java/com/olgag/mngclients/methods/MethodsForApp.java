@@ -169,7 +169,7 @@ public interface MethodsForApp {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(con);
         String lang = preferences.getString("lang", "he");
         Configuration config = con.getResources().getConfiguration();
-        if(! config.locale.getLanguage().equals(lang)) {
+        if(!config.locale.getLanguage().equals(lang)) {
             setUIperLang(lang, con.getResources());
         }
      }

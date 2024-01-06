@@ -328,8 +328,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener,
                 lng = "ru";
                 break;
         }
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putString("lang", lng);
+        editor.apply();
         MethodsForApp.setUIperLang(lng, getResources());
-       changeUIbylanguage();
+        changeUIbylanguage();
     }
 
 
